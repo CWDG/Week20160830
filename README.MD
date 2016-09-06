@@ -1,2 +1,3 @@
-[step 1: setup ] (https://asciinema.org/a/f7fnr57ek8i20gi9ta79a16no)
-
+`git clone https://github.com/CWDG/Week20160830.git `
+`cd Week20160830`
+`meteor`
