@@ -8,11 +8,18 @@
   			{{> message}}
   		{{/each}}
   	</ul>
+  	{{> newMessage}}
   </div>
 
 
 </body>
 
 <template name='message'>
-{{time}} - {{ text }}<br/>
+<li>{{time}} - {{ text }}</li>
+</template>
+
+
+<template name='newMessage'>
+	<input type='text' id='newMessage' name='newMessage'>
+	<button id='submitNewMessage' name='submitNewMessage'>Submit</button>
 </template>
