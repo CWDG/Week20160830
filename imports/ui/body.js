@@ -6,7 +6,7 @@ import { Messages } from '../api/messages.js'
 Template.body.helpers({
   messages () {
     return Messages.find({})
-    
+     	
   }
 })
 
