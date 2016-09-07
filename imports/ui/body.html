@@ -3,23 +3,26 @@
     <header>
       <h1> THis is a chat Room </h1>
     </header>
-    <ul>
-  		{{#each messages}}
-  			{{> message}}
-  		{{/each}}
-  	</ul>
+    <div class='messages'>
+	    <ul>
+	  		{{#each messages}}
+	  			{{> message}}
+	  		{{/each}}
+	  	</ul>
+  	</div>
   	{{> newMessage}}
   </div>
-
+	
 
 </body>
 
 <template name='message'>
-<li>{{time}} - {{ text }}</li>
+<li><b>{{nickname}}</b>: {{time}} - {{ text }}</li>
 </template>
 
 
 <template name='newMessage'>
-	<input type='text' id='newMessage' name='newMessage'>
+	NickName: <input type='text' id='nickname' placeholder='Harambe'><br />
+	<input type='text' id='newMessage' name='newMessage' placeholder="Type a Message">
 	<button id='submitNewMessage' name='submitNewMessage'>Submit</button>
 </template>
